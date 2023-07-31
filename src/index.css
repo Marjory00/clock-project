@@ -1,13 +1,123 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  /* width: 100%; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: hwb(0 100% 0%);
+  padding: 0;
+  margin: 0;
+
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 60px;
+  color: #2f3e46;
+}
+
+.box {
+  border-top: 10px double #84a98c;
+}
+
+/* time length controller boxs' elements */
+.time-controller-box {
+  width: 60%;
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  column-gap: 2rem;
+  justify-content: space-between;
+}
+
+.time-controller-box h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  color: #2f3e46;
+}
+
+.length-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.length-wrapper button {
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #84a98c;
+  color: white;
+  font-size: 18px;
+}
+
+.length-wrapper p {
+  text-align: center;
+  font-size: 25px;
+  color: #2f3e46;
+}
+
+/* count down box's elements */
+.countDown-box {
+  margin: 5rem auto;
+  border-radius: 50px;
+  padding: 1rem 0;
+  width: 40%;
+  border: double 10px #2f3e46;
+  background-color: #52796f;
+}
+
+.countDown-box h2 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.countDown-box p {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  padding: 2rem 0;
+}
+
+.start-button-box {
+  display: flex;
+  column-gap: 2rem;
+  width: 40%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.start-button-box button {
+  border: none;
+  padding: 1rem 0;
+  border-radius: 5px;
+  background-color: #84a98c;
+  color: white;
+  font-size: 25px;
+}
+
+button:disabled {
+  background-color: #a9c2ae;
+}
+
+/* other */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
 }
